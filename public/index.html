@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EL Cocinero </title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Main</a>
+    <a href="https://symbl.ai">Symbl.AI</a>
+    <a href="https://www.twilio.com/">Twilio</a>
+    <a href="https://www.chefclub.tv/">Explore More</a>
+  </div>
+  <div id="controls">
+    <div id="info">
+      <p class="instructions"></p>
+      <div id="client-name"></div>
+      <div id="output-selection">
+        <label>Headphone</label>
+        <select id="ringtone-devices" multiple></select>
+        <label>Speaker</label>
+        <select id="speaker-devices" multiple></select><br/>
+      </div>
+    </div>
+    <div id="call-controls">
+      <p class="instructions">Make a Call:</p>
+      <input id="phone-number" type="text" placeholder="Enter a phone Number" />
+      <button id="button-call">Call</button>
+      <button id="button-hangup">Hangup</button>
+      <div id="volume-indicators">
+        <label>Mic</label>
+        <div id="input-volume"></div><br/><br/>
+        <label>Speaker</label>
+        <div id="output-volume"></div>
+      </div>
+    </div>
+    <div id="log"></div>
+  </div>
+
+  <script type="text/javascript"
+  src="//sdk.twilio.com/js/client/releases/1.10.1/twilio.js"></script>  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="quickstart.js"></script>
+</body>
+</html>
